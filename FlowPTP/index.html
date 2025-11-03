@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Para Tus Patas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Flow Para Tus Patas</div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Dale Flow a Tus Patas</h1>
+            <p class="hero-subtitle">Medias personalizadas que reflejan tu estilo único</p>
+            <button class="cta-button" onclick="scrollToContact()">Personaliza Ahora</button>
+        </div>
+        <div class="hero-image">
+            <div class="sock-placeholder"></div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Flow Para Tus Patas</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Somos una empresa dedicada a crear medias personalizadas que reflejen tu personalidad y estilo. 
+                    Desde diseños minimalistas hasta patrones únicos y coloridos, cada par de medias cuenta tu historia.
+                </p>
+                <p class="about-text">
+                    Con materiales de alta calidad y un proceso de personalización sencillo, te ayudamos a expresar 
+                    tu individualidad desde los pies hasta la cabeza.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas" class="features">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Diseño Personalizado</h3>
+                    <p>Crea diseños únicos o elige entre nuestros templates. Tú decides cómo quieres que se vean tus medias.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Alta Calidad</h3>
+                    <p>Materiales premium y técnicas de impresión duraderas garantizan que tus medias mantengan su apariencia.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Envío Rápido</h3>
+                    <p>Recibe tus medias personalizadas en tiempo récord, sin esperas largas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💝</div>
+                    <h3>Perfecto para Regalos</h3>
+                    <p>Ideal para regalar algo único y especial a esa persona especial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image product-1"></div>
+                    <h3>Medias Clásicas</h3>
+                    <p>Estilo atemporal con diseño personalizado</p>
+                    <span class="price">$5.000</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-image product-2"></div>
+                    <h3>Medias Deportivas</h3>
+                    <p>Perfectas para el gimnasio y actividades al aire libre</p>
+                    <span class="price">$10.000</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-image product-3"></div>
+                    <h3>Medias Largas</h3>
+                    <p>Estilo oversize para mayor comodidad</p>
+                    <span class="price">$10.000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">Proceso Simple</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Elige tu estilo</h3>
+                    <p>Selecciona el tipo de media que deseas personalizar</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Personaliza</h3>
+                    <p>Sube tu diseño o elige uno de nuestros templates</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Recibe</h3>
+                    <p>¡Listo! Recibe tus medias personalizadas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¿Listo para personalizar tus medias?</h3>
+                    <p>Completa el formulario y te contactaremos pronto</p>
+                    <div class="contact-details">
+                        <p>📧 flowparatuspatas@gmail.com</p>
+                        <p>📱 +54 9 381 300 4491</p>
+                        <p>📍 Tucuman, Argentina</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Teléfono">
+                    <textarea placeholder="Cuéntanos sobre tu diseño personalizado..." rows="5" required></textarea>
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Flow Para Tus Patas</h3>
+                    <p>Medias personalizadas con estilo</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#caracteristicas">Características</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
